@@ -11,11 +11,12 @@ public class HelloWorld {
             hostname = ip.getHostName();
             System.out.println("Your current IP address : " + ip);
             System.out.println("Your current Hostname : " + hostname);
+            System.out.println("You did it. Welcome to Hello World of " +hostname);
  
       } catch (UnknownHostException e) {
  
             e.printStackTrace();
       }
-      System.out.println("You did it. Welcome to Hello World of Krishna");
+      
    }
 }

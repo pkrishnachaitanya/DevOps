@@ -4,4 +4,6 @@ COPY HelloWorld.java /root/hello-world/
 
 RUN javac HelloWorld.java
 
-ENTRYPOINT java HelloWorld
+EXPOSE 80
+
+ENTRYPOINT ['hostname' 'java HelloWorld'] 
